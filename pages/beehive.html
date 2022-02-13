@@ -10,25 +10,32 @@
   <meta name="description" content="b&b adventure.">
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/level.css">
 </head>
 
-<body>
-  <div class="grid-container">
-    <div class="header">
-      <h1>Bees & Beehives</h1>
-    </div>
+<body>   
+    <div class="grid-container">
+        <div class="header">
+            <img src="../assets/img/header_beehive.png"></img>  
+        </div>
 
-    <div class="mainbody">
-        <div><img src="assets\img\loading_bee.gif"></img></div>    
-        <button class="startbtn" id="startbtn">Start</button>
+        <div class="sidebar">
+            <img src="../assets/img/sidebee_beehive.png"></img>  
+        </div>
+
+        <div class="mainbody">
+            <div><img src="../assets/img/beehive.gif"></img></div>    
+            <h2>The bee friends are together again at their bee home!</h2> 
+            <button class="startbtn" id="startbtn">Play Again</button>
+            <button class="homebtn" id="homebtn">Home</button>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
         integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous">
     </script>
     
-    <script src="scripts/loading.js"></script>
+    <script src="../scripts/loading_beehive.js"></script>
 </body>
 
 </html>

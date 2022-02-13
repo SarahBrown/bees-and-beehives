@@ -1,53 +1,56 @@
 // round time limit
 let TIME_LIMIT = 60;
 
-// quotes, https://honeybeenet.gsfc.nasa.gov/Honeybees/Basics.htm
+// quotes
+//https://honeybeenet.gsfc.nasa.gov/Honeybees/Basics.htm
+//https://www.wwf.org.uk/learn/fascinating-facts/bees
+//https://www.beepods.com/101-fun-bee-facts-about-bees-and-beekeeping/
 let quotes1 = [
     "Bees have 2 pairs of wings",
     "Bees have 5 eyes",
     "Bees fly about 20 mph",
-    "Average per capita honey consumption in the US is 1.3 pounds",
-    "Bees carry pollen on their hind legs in a pollen basket or corbicula"
+    "Male bees in the hive are called drones",
+    "Foragers must collect nectar from about 2 million flowers to make 1 pound of honey"
 ]
 
 let quotes2 = [
-    "Bees have 5 eyes",
-    "Male bees in the hive are called drones",
+    "Bees are insects, so they have 6 legs",
+    "Bees have been here about 30 million years!",
     "An average beehive can hold around 50,000 bees",
     "Average per capita honey consumption in the US is 1.3 pounds",
     "Bees carry pollen on their hind legs in a pollen basket or corbicula"
 ]
 
 let quotes3 = [
-    "Bees have 5 eyes",
-    "Male bees in the hive are called drones",
-    "An average beehive can hold around 50,000 bees",
-    "Average per capita honey consumption in the US is 1.3 pounds",
-    "Bees carry pollen on their hind legs in a pollen basket or corbicula"
+    "The practice of beekeeping dates back at least 4,500 years",
+    "Honeybees have a dance move called the 'waggle dance'. It's not actually a dance move at all, rather a clever way of communicating between themselves",
+    "Honey bees are not born knowing how to make honey. Instead, they are taught in the hive by older bees. Much like how we all learn!",
+    "Bees are important because they pollinate approximately 130 agricultural crops in the US including fruit, fiber, nut, and vegetable crops",
+    "Almost 90% of wild plants and 75% of leading global crops depend on animal pollination."
 ]
 
 let quotes4 = [
-    "Bees have 5 eyes",
-    "Male bees in the hive are called drones",
-    "An average beehive can hold around 50,000 bees",
-    "Average per capita honey consumption in the US is 1.3 pounds",
-    "Bees carry pollen on their hind legs in a pollen basket or corbicula"
+    "Female bees in the hive (except the queen) are called worker bees",
+    "Humans sometimes use the Greater Honeyguide to find bee hives in the wild.",
+    "Mead, which is made from fermented honey, is the world's oldest fermented beverage",
+    "Many people notice that dictionaries list 'honeybee' as one word. However, entomologists use the two-word naming convention 'honey bee.' Both are correct!",
+    "Bees can be found living in so many locations. Marshes, shingle, sand dunes, soft cliffs, heathlands, wetlands, chalk grasslands"
 ]
 
 let quotes5 = [
-    "Bees have 5 eyes",
-    "Male bees in the hive are called drones",
-    "An average beehive can hold around 50,000 bees",
-    "Average per capita honey consumption in the US is 1.3 pounds",
-    "Bees carry pollen on their hind legs in a pollen basket or corbicula"
+    "Every species of bee performs their communication dances differently",
+    "A hive will collect approximately 66 pounds of pollen per year",
+    "The name ‘Melissa’ is derived from the Greek word for honey bee",
+    "The word 'honeymoon' is derived from the ancient tradition of supplying a newlywed couple with a month's supply of mead in order to ensure happiness and fertility",
+    "Honey bees beat their wings 200 times per second, creating their trademark 'buzz'"
 ]
 
 let quotes6 = [
-    "Bees have 5 eyes",
-    "Male bees in the hive are called drones",
-    "An average beehive can hold around 50,000 bees",
-    "Average per capita honey consumption in the US is 1.3 pounds",
-    "Bees carry pollen on their hind legs in a pollen basket or corbicula"
+    "The honey bee is the official insect of Maine",
+    "Honey is 25% sweeter than table sugar",
+    "According to all known laws of aviation, there is no way a bee should be able to fly. Its wings are too small to get its fat little body off the ground. The bee, of course, flies anyway because bees don't care what humans think is impossible.",
+    "In Greek mythology, Apollo is credited as being the first beekeeper",
+    "Stone Age cave paintings have been found of ancient beekeepers"
 ]
 
 let numQuotes = 5;

@@ -53,6 +53,15 @@ img {
     border: 0px;
 }
 
+.homebtn {
+  color: #685500;
+  border-radius: 5%;
+  background-color: #ffffff;
+  font-size: 1.5rem;
+  padding: 10px;
+  border: 0px;
+}
+
 @media screen and (max-width: 700px) {
   .row {
     flex-direction: column;
