@@ -40,7 +40,7 @@ let quotes4 = [
 let quotes5 = [
     "Every species of bee performs their communication dances differently",
     "A hive will collect approximately 66 pounds of pollen per year",
-    "The name ‘Melissa’ is derived from the Greek word for honey bee",
+    "The name 'Melissa' is derived from the Greek word for honey bee",
     "The word 'honeymoon' is derived from the ancient tradition of supplying a newlywed couple with a month's supply of mead in order to ensure happiness and fertility",
     "Honey bees beat their wings 200 times per second, creating their trademark 'buzz'"
 ]
