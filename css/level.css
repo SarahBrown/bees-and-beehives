@@ -15,12 +15,17 @@ img {
 }
 
 .header { 
-
+  grid-area: header; 
+  background-color: #cbe5ff;
+  margin: 0;
+  padding: 0;
 }
 
 .sidebar { 
   grid-area: menu;
   background-color: #cbe5ff;
+  margin: 0;
+  padding: 0;
 }
 
 .siderbar img {
@@ -31,15 +36,6 @@ img {
 .mainbody { 
   grid-area: main; 
   background-color: #cbe5ff;
-}
-
-.header { 
-  grid-area: header; 
-  padding: 10px;
-  text-align: center;
-  background-color: #2a77c3;
-  color: #fff494;
-  font-family: 'Roboto';
 }
 
 .grid-container {
@@ -56,7 +52,7 @@ img {
 .grid-container > div {
   /*background-color: rgba(255, 255, 255, 0.8);*/
   text-align: center;
-  padding: 20px 0;
+  padding: 0px 0;
   font-size: 20px;
 }
 
@@ -124,7 +120,17 @@ img {
   border: 0px;
 }
 
-.timer, .errors, .accuracy, .wpm , .level{
+.restartbtn {
+  display: none;
+  color: #685500;
+  border-radius: 5%;
+  background-color: #ffffff;
+  font-size: 1.5rem;
+  padding: 10px;
+  border: 0px;
+}
+
+.timer, .errors, .accuracy, .level{
   background-color: #fff494;
   height: 100px;
   width: 100px;
@@ -140,6 +146,12 @@ img {
  
 .wpm  {
   display: none;
+  background-color: #fff494;
+  height: 100px;
+  width: 100px;
+  margin: 8px;
+  padding: 12px;
+  border-radius: 10%;
 }
  
 .header-text {
@@ -148,12 +160,12 @@ img {
   font-weight: 600;
 }
  
-.incorrect-char {
+.incorrect {
   color: red;
   text-decoration: underline;
 }
  
-.correct-char {
+.correct {
   color: darkgreen;
 }
 
