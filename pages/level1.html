@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>B&B</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="b&b adventure.">
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/level.css">
+</head>
+
+<style>
+    .header { 
+        background-image: url('../assets/img/header_lvl1.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-color:#cbe5ff;
+    }
+</style>
+
+<body>   
+    <div class="grid-container">
+        <div class="header">
+        </div>
+
+        <div class="sidebar">
+            <img src="../assets/img/blank_bee.png"></img>  
+        </div>
+
+        <div class="mainbody">
+            <div class="column">
+                <div class="row">
+                    <div class="level">
+                        <div class="header-text">LEVEL</div>
+                        <div class="cur-level">1</div>
+                    </div>
+
+                    <div class="wpm">
+                        <div class="header-text">WPM</div>
+                        <div class="cur-wpm">100</div>
+                    </div>
+
+                    <div class="errors">
+                        <div class="header-text">Errors</div>
+                        <div class="cur-errors">0</div>
+                    </div>
+
+                    <div class="timer">
+                        <div class="header-text">Time</div>
+                        <div class="cur-time">60</div>
+                    </div>
+
+                    <div class="accuracy">
+                        <div class="header-text">% Accuracy</div>
+                        <div class="cur-accuracy">100</div>
+                    </div>
+                </div>
+
+                <div class="quote">
+                    Click on the area below to start the game.
+                </div>
+
+                <textarea class="input-area" placeholder="start typing here..." id="input-area"></textarea>
+                <button class="nextlvlbtn" id="nextlvlbtn">Next Level</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous">
+    </script>
+    
+    <script src="../scripts/game.js"></script>
+</body>
+
+</html>

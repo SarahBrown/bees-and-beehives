@@ -10,7 +10,7 @@
   <meta name="description" content="b&b adventure.">
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -19,21 +19,16 @@
       <h1>Bees & Beehives</h1>
     </div>
 
-    <div class="sidebar">
-      <div><img style="width: 75%" src="assets\img\bee.png"></img></div>    
+    <div class="mainbody">
+        <div><img src="assets\img\loading_bee.gif"></img></div>    
+        <button class="startbtn" id="startbtn">Start</button>
     </div>
 
-    <div class="body">
-      <div class="wrapper2">
-        <div class="card2">
-            <textarea class="input_area" placeholder="start typing here..." oninput="processCurrentText()"
-              onfocus="startGame()"></textarea>
-            <button class="restart_btn" onclick="resetValues()">Restart</button>
-        </div>
-      </div>
-
-    </div>
-  </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous">
+    </script>
+    
+    <script src="scripts/loading.js"></script>
 </body>
 
 </html>
