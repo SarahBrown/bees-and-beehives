@@ -3,9 +3,9 @@ let TIME_LIMIT = 60;
 
 // quotes, https://honeybeenet.gsfc.nasa.gov/Honeybees/Basics.htm
 let quotes1 = [
+    "Bees have 2 pairs of wings",
     "Bees have 5 eyes",
-    "Male bees in the hive are called drones",
-    "An average beehive can hold around 50,000 bees",
+    "Bees fly about 20 mph",
     "Average per capita honey consumption in the US is 1.3 pounds",
     "Bees carry pollen on their hind legs in a pollen basket or corbicula"
 ]
@@ -73,6 +73,9 @@ let charTyped = 0;
 let curQuote = "";
 let quoteNum = 0;
 let timer = null;
+let started = false;
+let urlStr = ''
+inputArea.val('');
 
 function updateQuote() {
     quoteText.text(null);
@@ -95,7 +98,7 @@ function updateQuote() {
     })
 
     // increments quote num or cycles to start
-    if (quoteNum < numQuotes.length-1) {
+    if (quoteNum < numQuotes-1) {
         quoteNum++;
     }
     else {
@@ -113,7 +116,7 @@ function processCurrentText() {
     errors = 0;
 
     // stuffs quote span into an array
-    quoteSpanArr = quoteText.toArray();
+    quoteSpanArr = quoteText.children().toArray();
 
     // compares arrays to each other
     quoteSpanArr.forEach((char, index) => {
@@ -132,6 +135,7 @@ function processCurrentText() {
         else {
             char.classList.add("incorrect");
             char.classList.remove("correct");
+            errors++;
         }
     });
 
@@ -141,13 +145,14 @@ function processCurrentText() {
     // update accuracy
     let correctChar = (charTyped - (numErrors+errors));
     let accur = ((correctChar/charTyped)*100);
-    accuracyText.text(Math.round(accur))
+    accuracy = Math.round(accur);
+    accuracyText.text(accuracy);
 
     // check to see if need to update quote
     if (curInput.length == curQuote.length) {
         updateQuote();
         numErrors += errors;
-        inputArea.text("");
+        inputArea.val('');
     }
 }
 
@@ -166,6 +171,14 @@ function updateTimer() {
 function startGame() {
     updateQuote();
     timer = setInterval(updateTimer, 1000); // sets interval to seconds
+    switch(curLevel){
+        case "1": urlStr='../pages/level2.html'; break;
+        case "2": urlStr='../pages/level3.html'; break;
+        case "3": urlStr='../pages/level4.html'; break;
+        case "4": urlStr='../pages/level5.html'; break;
+        case "5": urlStr='../pages/level6.html'; break;
+        case "6": urlStr='../pages/beehive.html'; break;
+    }
 }
 
 function resetValues() {
@@ -176,10 +189,12 @@ function resetValues() {
     accuracy = 0;
     charTyped = 0;
     quoteNum = 0;
+    inputArea.val('');
     inputArea.prop("disabled", false);  // re enables typing
+    wpmGroup.hide();
+    started = false;
 
-    inputArea.text("");
-    quoteText.text("Click on the area below to start the game.");
+    quoteText.text("Click on the area below to start up the game.");
     accuracyText.text("100");
     errorText.text("0");
     restartbtn.style.display="none";
@@ -196,18 +211,21 @@ function finishGame() {
     }
 
     else {
-        quoteText.text("Need 70% accuracy to rescue the bee, press restart to retry!");
+        quoteText.text("Aim for above 70% to rescue this bee, press Restart to try again!");
         restartbtn.style.display = "block";
     }
 
     wpm = Math.round((((charTyped / 5) / timePassed) * 60));
     wpmText.text(wpm);
 
-    wpmGroup.style.display = "block";
+    wpmGroup.show();
 }
 
 $("#input-area").focus(function(){
-    startGame();
+    if (!started) {
+        started = true;
+        startGame();
+    }
  })
 
 $("#input-area").on("input", function(){
@@ -216,7 +234,8 @@ $("#input-area").on("input", function(){
 
 $("#nextlvlbtn").click(function(){
     //window.location.href='pages/bee-select.html';
-	window.location.href='pages/level2.html';
+    window.location.href=urlStr;
+	
  })
 
  $("#restartbtn").click(function(){

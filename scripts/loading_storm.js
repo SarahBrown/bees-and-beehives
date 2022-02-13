@@ -1,6 +1,6 @@
 $("#startbtn").click(function(){
     //window.location.href='pages/bee-select.html';
-	window.location.href='pages/level1.html';
+	window.location.href='pages/storm.html';
  })
 
 //  function changepage(){
